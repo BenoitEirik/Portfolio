@@ -7,8 +7,8 @@
     <header class="shrink-0">
       Portfolio
     </header>
-    <div class="grow min-h-0 grid grid-cols-3 gap-4 outline-4 outline-dashed outline-green-800">
-      <nav class="min-h-0 col-span-2 grid grid-rows-2 grid-cols-2 gap-8 h-full outline-4 outline-dashed outline-red-800">
+    <div class="grid min-h-0 grow grid-cols-3 gap-4">
+      <nav class="col-span-2 grid h-full min-h-0 grid-cols-2 grid-rows-2 gap-8">
         <MenuItem title="Portfolio" to="/portfolio" />
         <MenuItem title="Blog" to="/blog" />
         <MenuItem title="CV" to="/cv" />
