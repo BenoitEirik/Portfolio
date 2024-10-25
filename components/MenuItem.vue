@@ -8,7 +8,7 @@ const props = defineProps<{
 <template>
   <div class="flex items-center justify-center p-8">
     <NuxtLink :to="to"
-      class="relative flex h-full w-full flex-col items-stretch gap-1 text-4xl transition hover:[transform:perspective(800px)translateZ(2rem)] [&_#cov]:hover:[transform:perspective(800px)translateZ(2rem)] [&_#tb]:hover:bg-amber-600 [&_#tb]:hover:[transform:perspective(800px)translateZ(2rem)] [&_header]:hover:bg-amber-600/50 [&_header]:hover:[transform:perspective(800px)translateZ(2rem)]">
+      class="relative flex h-full w-full flex-col items-stretch gap-1 text-4xl transition hover:[transform:perspective(800px)translateZ(2rem)] [&_#cov]:hover:[transform:perspective(800px)translateZ(2rem)] [&_#tb]:hover:bg-amber-600 [&_#tb]:hover:[transform:perspective(800px)translateZ(2rem)] [&_header]:hover:bg-amber-600/50 [&_header]:hover:[transform:perspective(800px)translateZ(2rem)]" style="cursor: url('/cursors/The_Division_1/TD_link.cur'), pointer;">
       <span id="tb" class="block h-4 bg-transparent transition" />
       <div class="flex min-h-0 grow flex-col items-stretch justify-center border-b border-b-neutral-500 bg-neutral-800 bg-opacity-50 backdrop-blur-md">
         <header
