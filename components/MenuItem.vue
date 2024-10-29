@@ -18,7 +18,7 @@ const props = defineProps<{
         <div class="min-h-0 grow">
           <img id="cov"
             class="h-full w-full object-contain transition"
-            src="/—Pngtree—silver eagle logo for gaming_6352572.png">
+            src="/images/—Pngtree—silver eagle logo for gaming_6352572.png">
         </div>
         <span class="absolute -left-2 bottom-0 h-1 w-1 bg-neutral-400" />
         <span class="absolute -right-2 bottom-0 h-1 w-1 bg-neutral-400" />
