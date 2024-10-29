@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@iconify/json':
-        specifier: ^2.2.265
-        version: 2.2.265
       '@nuxt/icon':
         specifier: ^1.6.1
         version: 1.6.1(magicast@0.3.5)(rollup@4.24.0)(vite@5.4.9(@types/node@22.7.6)(sass@1.80.1)(terser@5.36.0))(vue@3.5.12)
@@ -796,9 +793,6 @@ packages:
 
   '@iconify/collections@1.0.476':
     resolution: {integrity: sha512-CHErIMzMRq1zWnGsSeWFu3o1fwIRg/dLQwSVlmmUFr8k7pJEsD5HFQyW79u1YcEjUWa1m50/qzz0SCcAZUK6Tw==}
-
-  '@iconify/json@2.2.265':
-    resolution: {integrity: sha512-pTM0S5o1DsNgqdNptL5b82DLA/ez7YM2TuS7D/t6EwTI54n5zUUxaT3hfZ86TEqwTjVBcAD7QaDcXGTWBF1m6Q==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -4782,11 +4776,6 @@ snapshots:
   '@iconify/collections@1.0.476':
     dependencies:
       '@iconify/types': 2.0.0
-
-  '@iconify/json@2.2.265':
-    dependencies:
-      '@iconify/types': 2.0.0
-      pathe: 1.1.2
 
   '@iconify/types@2.0.0': {}
 

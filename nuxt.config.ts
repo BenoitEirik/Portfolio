@@ -7,10 +7,5 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/fonts',
     '@nuxt/icon'
-  ],
-  icon: {
-    serverBundle: {
-      collections: ['lsicon','ion']
-    }
-  }
+  ]
 })

@@ -11,14 +11,15 @@
             <h2 class="text-3xl">Recherche</h2>
             <Input type="text" icon-name="ion:search-outline" />
           </section>
-          <section>
+          <section class="grow">
             <h2 class="text-3xl">Tags</h2>
             <div>
 
             </div>
           </section>
-          <section>
+          <section class="flex flex-col gap-4">
             <h2 class="text-3xl">Abonnement</h2>
+            <Input type="text" icon-name="ion:ios-send" placeholder="Entrer votre courriel" />
           </section>
         </div>
         <section class="grow">
