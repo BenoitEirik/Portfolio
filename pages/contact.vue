@@ -3,9 +3,11 @@
 </script>
 
 <template>
-  <div>
-    contact
-  </div>
+  <PageLayout title="Contact" :page-number="4">
+    <template #body>
+
+    </template>
+  </PageLayout>
 </template>
 
 <style>

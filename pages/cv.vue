@@ -3,9 +3,11 @@
 </script>
 
 <template>
-  <div>
-    cv
-  </div>
+  <PageLayout title="CV" :page-number="3">
+    <template #body>
+
+    </template>
+  </PageLayout>
 </template>
 
 <style>
