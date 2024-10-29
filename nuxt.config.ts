@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   ],
   icon: {
     serverBundle: {
-      collections: ['lsicon']
+      collections: ['lsicon','ion']
     }
   }
 })
