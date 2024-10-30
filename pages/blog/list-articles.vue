@@ -10,7 +10,7 @@
       <ul class="grid grid-cols-1 gap-4 overflow-y-auto">
         <li v-for="article in list" :key="article._path">
           <NuxtLink to="/blog/css-selectors"
-            class="flex flex-col gap-1 outline-none transition active:scale-95 [&_#tb]:hover:bg-amber-600 [&_#tb]:focus:bg-amber-600">
+            class="bg-hover-animation flex flex-col gap-1 outline-none transition active:scale-95 [&_#tb]:hover:bg-amber-600 [&_#tb]:focus:bg-amber-600">
             <span id="tb" class="block h-2 bg-transparent transition" />
             <article
               class="relative flex gap-4 bg-neutral-600/50 backdrop-blur-md before:absolute before:left-0 before:h-full before:w-[2px] before:border-y-2 before:border-white before:bg-transparent after:absolute after:right-0 after:h-full after:w-[2px] after:border-y-2 after:border-white after:bg-transparent"
@@ -33,4 +33,19 @@
   </section>
 </template>
 
-<style></style>
+<style lang="scss">
+  .bg-hover-animation {
+    transition: background-color 0.2s ease;
+  }
+  .bg-hover-animation:hover {
+    animation: flash 0.25s linear forwards;
+  }
+  @keyframes flash {
+    0% {
+      @apply bg-amber-600; /* couleur hover */
+    }
+    100% {
+      background-color: bg-transparent; /* couleur normale */
+    }
+  }
+</style>

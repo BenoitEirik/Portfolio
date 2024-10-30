@@ -7,5 +7,14 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/fonts',
     '@nuxt/icon'
-  ]
+  ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern',
+        },
+      },
+    },
+  }
 })
