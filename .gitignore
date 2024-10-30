@@ -25,3 +25,7 @@ logs
 
 # Nuxt Fonts module
 .data
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tailwind.json
