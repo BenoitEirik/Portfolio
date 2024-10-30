@@ -15,7 +15,7 @@
             <Icon name="pepicons-print:folder" size="200px" />
           </template>
         </MenuItem>
-        <MenuItem title="Blog" to="/blog">
+        <MenuItem title="Blog" to="/blog/list-articles">
           <template #picture>
             <Icon name="pepicons-print:book" size="200px" />
           </template>

@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="flex bg-neutral-600/50 backdrop-blur-md transition active:bg-amber-600/50 active:[transform:scale(0.975)]">
+  <div class="flex transition bg-neutral-600/50 backdrop-blur-md active:bg-amber-600/50 active:scale-95">
     <input :type="props.type"
       class="h-12 grow border-b-4 border-neutral-300/20 bg-transparent px-3 outline-none transition focus:border-b-amber-600 [&+button]:focus:border-b-amber-600" :placeholder="props.placeholder">
     <button

@@ -21,8 +21,10 @@ const props = defineProps<{
             <slot name="picture" id="rr" />
           </div>
         </div>
-        <span class="absolute bottom-0 w-1 h-1 -left-2 bg-neutral-400" />
-        <span class="absolute bottom-0 w-1 h-1 -right-2 bg-neutral-400" />
+        <span class="absolute top-0 w-1 h-1 transition -left-2 bg-neutral-400" />
+        <span class="absolute top-0 w-1 h-1 transition -right-2 bg-neutral-400" />
+        <span class="absolute bottom-0 w-1 h-1 transition -left-2 bg-neutral-400" />
+        <span class="absolute bottom-0 w-1 h-1 transition -right-2 bg-neutral-400" />
       </div>
 
     </NuxtLink>
