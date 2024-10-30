@@ -12,7 +12,7 @@ const props = defineProps<{
       style="cursor: url('/cursors/The_Division_1/TD_link.cur'), pointer;">
       <span id="tb" class="block h-4 bg-transparent transition" />
       <div
-        class="flex min-h-0 grow flex-col items-stretch justify-center border-b border-b-neutral-500 bg-neutral-600/50 backdrop-blur-md">
+        class="square-pixels-on-extremities flex min-h-0 grow flex-col items-stretch justify-center border-b border-b-neutral-500 bg-neutral-600/50 backdrop-blur-md">
         <header class="z-10 flex shrink-0 items-center justify-center bg-neutral-300/20 p-2 transition">
           <h2>{{ props.title }}</h2>
         </header>
@@ -21,12 +21,7 @@ const props = defineProps<{
             <slot name="picture" id="rr" />
           </div>
         </div>
-        <span class="absolute -left-2 top-0 h-1 w-1 bg-neutral-400 transition" />
-        <span class="absolute -right-2 top-0 h-1 w-1 bg-neutral-400 transition" />
-        <span class="absolute -left-2 bottom-0 h-1 w-1 bg-neutral-400 transition" />
-        <span class="absolute -right-2 bottom-0 h-1 w-1 bg-neutral-400 transition" />
       </div>
-
     </NuxtLink>
   </div>
 </template>

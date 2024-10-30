@@ -12,8 +12,7 @@
           <NuxtLink to="/blog/css-selectors"
             class="bg-hover-animation flex flex-col gap-1 outline-none transition active:scale-95 [&_#tb]:hover:bg-amber-600 [&_#tb]:focus:bg-amber-600">
             <span id="tb" class="block h-2 bg-transparent transition" />
-            <article
-              class="relative flex gap-4 bg-neutral-600/50 backdrop-blur-md before:absolute before:left-0 before:h-full before:w-[2px] before:border-y-2 before:border-white before:bg-transparent after:absolute after:right-0 after:h-full after:w-[2px] after:border-y-2 after:border-white after:bg-transparent"
+            <article class="square-pixels-on-extremities flex gap-4 bg-neutral-600/50 backdrop-blur-md"
               style="cursor: url('/cursors/The_Division_1/TD_link.cur'), pointer;">
               <img src="/images/wallpapers/pexels-digitech-1438761.webp" class="cover aspect-video h-52 shrink-0">
               <div class="flex grow flex-col gap-2 py-2">
@@ -34,18 +33,23 @@
 </template>
 
 <style lang="scss">
-  .bg-hover-animation {
-    transition: background-color 0.2s ease;
+.bg-hover-animation {
+  transition: background-color 0.2s ease;
+}
+
+.bg-hover-animation:hover {
+  animation: flash 0.25s linear forwards;
+}
+
+@keyframes flash {
+  0% {
+    @apply bg-amber-600;
+    /* couleur hover */
   }
-  .bg-hover-animation:hover {
-    animation: flash 0.25s linear forwards;
+
+  100% {
+    background-color: bg-transparent;
+    /* couleur normale */
   }
-  @keyframes flash {
-    0% {
-      @apply bg-amber-600; /* couleur hover */
-    }
-    100% {
-      background-color: bg-transparent; /* couleur normale */
-    }
-  }
+}
 </style>
