@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex min-h-screen w-screen max-w-full items-center justify-between bg-gray-900 px-20 py-4 font-[Borda] text-lg font-bold text-white [background:_url(/images/wallpapers/Division-2-rues.jpg)_center/cover] [perspective:800px]">
+    class="flex min-h-screen w-screen max-w-full items-center justify-between bg-gray-900 px-20 py-4 font-[Borda] text-lg font-bold text-white [background:_url(/images/wallpapers/pexels-digitech-1438761.webp)_center/cover] [perspective:800px]">
     <div class="h-10 w-10"></div>
     <NuxtPage
       class="h-[1040px] max-h-[1040px] w-[1880px] max-w-[1880px] border border-neutral-500 backdrop-blur-md [transform:rotateY(-3deg)]" />
@@ -13,10 +13,25 @@ body {
 }
 
 .square-pixels-on-extremities {
-  @apply
-    relative
-    before:top-0 before:absolute before:left-0 before:h-full before:w-[2px] before:border-y-2 before:border-white before:bg-transparent
-    after:top-0 after:absolute after:right-0 after:h-full after:w-[2px] after:border-y-2 after:border-white after:bg-transparent
-  ;
+  @apply relative before:top-0 before:absolute before:left-0 before:h-full before:w-[2px] before:border-y-2 before:border-white before:bg-transparent after:top-0 after:absolute after:right-0 after:h-full after:w-[2px] after:border-y-2 after:border-white after:bg-transparent;
+}
+
+/* Style Simplebar */
+.simplebar-track {
+  background: linear-gradient(to left, transparent 45%, rgb(163 163 163) 45% 55%, transparent 60% 100%);
+}
+
+.simplebar-scrollbar::before {
+  @apply bg-white rounded-none !opacity-100 !transition-[left,right];
+  inset-inline: 3px;
+}
+
+.simplebar-track:hover {
+  .simplebar-scrollbar.simplebar-visible:before,
+  .simplebar-scrollbar.simplebar-visible:active,
+  .simplebar-scrollbar.simplebar-visible:focus {
+    @apply bg-amber-600 !important;
+    inset-inline: 0px !important;
+  }
 }
 </style>

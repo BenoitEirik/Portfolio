@@ -5,7 +5,7 @@
 <template>
   <PageLayout title="Blog" :page-number="2">
     <template #body>
-      <div class="flex h-full items-stretch justify-stretch gap-8">
+      <div class="flex h-full max-h-full items-stretch justify-stretch gap-8 overflow-hidden">
         <aside class="flex w-[500px] shrink-0 flex-col gap-4">
           <section class="flex flex-col gap-4">
             <h2 class="text-3xl">Recherche</h2>
@@ -22,9 +22,7 @@
             <Input type="text" icon-name="ion:ios-send" placeholder="Entrer votre courriel" />
           </section>
         </aside>
-        <div class="grow">
-          <NuxtPage />
-        </div>
+        <NuxtPage class="grow overflow-hidden" />
       </div>
     </template>
   </PageLayout>
