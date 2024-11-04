@@ -14,6 +14,12 @@ importers:
       nuxt:
         specifier: ^3.13.0
         version: 3.13.2(@parcel/watcher@2.4.1)(@types/node@22.7.6)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.24.0)(sass@1.80.5)(terser@5.36.0)(vite@5.4.9(@types/node@22.7.6)(sass@1.80.5)(terser@5.36.0))
+      pdfobject:
+        specifier: ^2.3.0
+        version: 2.3.0
+      pdfobject-vue:
+        specifier: ^0.0.4
+        version: 0.0.4(pdfobject@2.3.0)(vue@3.5.12)
       simplebar-vue:
         specifier: ^2.3.5
         version: 2.3.5(vue@3.5.12)
@@ -3105,6 +3111,15 @@ packages:
 
   pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
+
+  pdfobject-vue@0.0.4:
+    resolution: {integrity: sha512-sk3IqtwyC1j7Gu0rkskOgWnJgDNtCkdwkxvnLGI3xK0pMhgleNw2IWpH41FSNVuE0h5zdjjakpXsv+YH0cbXfA==}
+    peerDependencies:
+      pdfobject: ^2.2.12
+      vue: ^3.0.0
+
+  pdfobject@2.3.0:
+    resolution: {integrity: sha512-w/9pXDXTDs3IDmOri/w8lM/w6LHR0/F4fcBLLzH+4csSoyshQ5su0TE7k0FLHZO7aOjVLDGecqd1M89+PVpVAA==}
 
   perfect-debounce@1.0.0:
     resolution: {integrity: sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA==}
@@ -7999,6 +8014,13 @@ snapshots:
   path-type@5.0.0: {}
 
   pathe@1.1.2: {}
+
+  pdfobject-vue@0.0.4(pdfobject@2.3.0)(vue@3.5.12):
+    dependencies:
+      pdfobject: 2.3.0
+      vue: 3.5.12
+
+  pdfobject@2.3.0: {}
 
   perfect-debounce@1.0.0: {}
 

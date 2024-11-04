@@ -34,7 +34,7 @@
   </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .bg-hover-animation {
   transition: background-color 0.2s ease;
 }
@@ -46,12 +46,10 @@
 @keyframes flash {
   0% {
     @apply bg-amber-600;
-    /* couleur hover */
   }
 
   100% {
     background-color: bg-transparent;
-    /* couleur normale */
   }
 }
 </style>

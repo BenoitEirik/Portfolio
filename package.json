@@ -12,6 +12,8 @@
   "dependencies": {
     "@nuxt/icon": "^1.6.1",
     "nuxt": "^3.13.0",
+    "pdfobject": "^2.3.0",
+    "pdfobject-vue": "^0.0.4",
     "simplebar-vue": "^2.3.5",
     "vue": "latest",
     "vue-router": "latest"

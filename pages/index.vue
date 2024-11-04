@@ -56,7 +56,7 @@
           <Icon name="fluent-mdl2:text-document-shared" size="120px" />
         </template>
         </MenuItem>
-        <MenuItem title="Contact" to="/contact">
+        <MenuItem title="Contact" to="/contact/write">
         <template #picture>
           <Icon name="fluent-mdl2:connect-contacts" size="120px" />
         </template>
