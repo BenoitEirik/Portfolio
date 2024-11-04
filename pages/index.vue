@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="flex flex-col justify-stretch gap-4 p-8">
+  <div class="flex flex-col justify-stretch gap-8 p-8">
     <header class="flex shrink-0 items-center justify-start gap-4">
       <Icon name="cbi:target" size="42px" class="!text-amber-600" />
       <h1 class="pt-2 text-5xl">Olaf-Marie SERGENT</h1>
