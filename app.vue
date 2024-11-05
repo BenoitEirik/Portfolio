@@ -1,9 +1,10 @@
 <template>
   <div
-    class="flex min-h-screen w-screen max-w-full items-center justify-between bg-gray-900 px-20 py-4 font-[Borda] text-lg font-bold text-white [background:_url(/images/wallpapers/pexels-digitech-1438761.webp)_center/cover] [perspective:800px]">
-    <div class="h-10 w-10"></div>
-    <NuxtPage
-      class="h-[1040px] max-h-[1040px] w-[1880px] max-w-[1880px] border border-neutral-500 bg-slate-800/20 backdrop-blur-md [transform:rotateY(-3deg)]" />
+    class="flex min-h-screen w-screen max-w-full items-center justify-between bg-gray-900 px-20 py-4 font-[Borda] text-lg font-bold text-white [background:_url(/images/wallpapers/pexels-digitech-1438761.webp)_center/cover]">
+    <div class="h-10 w-10" />
+    <div class="h-[1040px] max-h-[1040px] w-[1880px] max-w-[1880px] border border-neutral-500 bg-slate-800/20 backdrop-blur-md [transform:rotateY(-3deg)]">
+      <NuxtPage class="h-full max-h-full w-full max-w-full" />
+    </div>
   </div>
 </template>
 
@@ -53,5 +54,18 @@ body {
       inset-block: 0px !important;
     }
   }
+}
+
+/* Style page transitions */
+.page-enter-active,
+.page-leave-active {
+  @apply transition-all;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+  scale: 0.95;
 }
 </style>

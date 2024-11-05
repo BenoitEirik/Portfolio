@@ -9,9 +9,14 @@ const props = defineProps<{
   <div class="flex flex-col gap-8 p-8">
     <header class="flex items-center justify-start gap-4">
       <div class="grid grid-cols-2 grid-rows-2 gap-2 align-middle">
-        <span v-for="i in 4" class="h-4 w-5 bg-neutral-600/50 backdrop-blur-md" :class="{ '!bg-amber-600': i === props.pageNumber }" />
+        <span v-for="i in 4" class="h-4 w-5 bg-neutral-600/50 backdrop-blur-md"
+          :class="{ '!bg-amber-600': i === props.pageNumber }" />
       </div>
-      <h1 class="pt-2 text-5xl">{{ props.title }}</h1>
+      <h1 class="pr-2 pt-2 text-5xl">{{ props.title }}</h1>
+      <hr class="h-full w-[2px] border-none bg-neutral-300/20">
+      <button class="flex items-center justify-center p-2" @click="navigateTo('/')">
+        <Icon name="ion:arrow-return-left" size="28px" />
+      </button>
     </header>
 
     <slot name="body" />
