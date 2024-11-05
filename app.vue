@@ -17,21 +17,41 @@ body {
 }
 
 /* Style Simplebar */
-.simplebar-track {
-  background: linear-gradient(to left, transparent 45%, rgb(163 163 163) 45% 55%, transparent 60% 100%);
+.simplebar-vertical.simplebar-track {
+  background: linear-gradient(to left, transparent 45%, rgb(163 163 163) 45% 55%, transparent 55% 100%);
+
+  .simplebar-scrollbar::before {
+    @apply bg-white rounded-none !opacity-100 !transition-[left,right];
+    inset-inline: 3px;
+  }
+
+  &:hover {
+
+    .simplebar-scrollbar.simplebar-visible:before,
+    .simplebar-scrollbar.simplebar-visible:active,
+    .simplebar-scrollbar.simplebar-visible:focus {
+      @apply bg-amber-600 !important;
+      inset-inline: 0px !important;
+    }
+  }
 }
 
-.simplebar-scrollbar::before {
-  @apply bg-white rounded-none !opacity-100 !transition-[left,right];
-  inset-inline: 3px;
-}
+.simplebar-horizontal.simplebar-track {
+  background: linear-gradient(to bottom, transparent 45%, rgb(163 163 163) 40% 55%, transparent 55% 100%);
 
-.simplebar-track:hover {
-  .simplebar-scrollbar.simplebar-visible:before,
-  .simplebar-scrollbar.simplebar-visible:active,
-  .simplebar-scrollbar.simplebar-visible:focus {
-    @apply bg-amber-600 !important;
-    inset-inline: 0px !important;
+  .simplebar-scrollbar::before {
+    @apply bg-white !rounded-none !opacity-100 !transition-[top,bottom];
+    inset-block: 3px;
+  }
+
+  &:hover {
+
+    .simplebar-scrollbar.simplebar-visible:before,
+    .simplebar-scrollbar.simplebar-visible:active,
+    .simplebar-scrollbar.simplebar-visible:focus {
+      @apply bg-amber-600 !opacity-100 !rounded-none !important;
+      inset-block: 0px !important;
+    }
   }
 }
 </style>
