@@ -68,4 +68,9 @@ body {
   filter: blur(1rem);
   scale: 0.95;
 }
+
+/* Style cursor */
+button, a, input, textarea, select, summary, [role="button"] {
+  cursor: url('/cursors/The_Division_1/TD_link.cur'), pointer;
+}
 </style>

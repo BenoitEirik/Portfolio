@@ -13,8 +13,7 @@
             <NuxtLink :to="article._path"
               class="bg-hover-animation flex flex-col gap-1 outline-none transition active:scale-95 [&_#tb]:hover:bg-amber-600 [&_#tb]:focus:bg-amber-600">
               <span id="tb" class="block h-2 bg-transparent transition" />
-              <article class="square-pixels-on-extremities flex gap-4 bg-neutral-600/50 backdrop-blur-md"
-                style="cursor: url('/cursors/The_Division_1/TD_link.cur'), pointer;">
+              <article class="square-pixels-on-extremities flex gap-4 bg-neutral-600/50 backdrop-blur-md">
                 <img src="/images/wallpapers/pexels-digitech-1438761.webp" class="cover aspect-video h-52 shrink-0">
                 <div class="flex grow flex-col gap-2 py-2">
                   <h3 class="line-clamp-2 text-2xl transition">{{ article.title }}</h3>
