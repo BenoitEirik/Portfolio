@@ -57,7 +57,7 @@
       </section>
       <div class="col-span-2 flex flex-col gap-8">
         <nav class="grid h-full min-h-0 grid-cols-2 grid-rows-2 gap-4">
-          <MenuItem title="Portfolio" to="/portfolio/projets">
+          <MenuItem title="Portfolio" to="/portfolio/experience-pro">
           <template #picture>
             <Icon name="fluent-mdl2:folder" size="100px" />
           </template>

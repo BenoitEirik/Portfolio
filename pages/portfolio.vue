@@ -5,24 +5,32 @@
 <template>
   <PageLayout title="Portfolio" :page-number="1">
     <template #body>
-      <Tab :items="[
-        {
-          title: 'Projets',
-          fullPath: '/portfolio/projets'
-        },
-        {
-          title: 'Compétences techniques',
-          fullPath: '/portfolio/competences-techniques'
-        },
-        {
-          title: 'Compétences humaines',
-          fullPath: '/portfolio/competences-humaines'
-        }
-      ]" />
+      <div class="flex h-full max-h-full flex-col gap-4 overflow-hidden">
+        <Tab :items="[
+          {
+            title: 'Expériences professionnelles',
+            activePath: '/portfolio/experience-pro',
+            to: '/portfolio/experience-pro'
+          },
+          {
+            title: 'Expériences personnelles',
+            activePath: '/portfolio/experience-perso',
+            to: '/portfolio/experience-perso'
+          },
+          {
+            title: 'Compétences techniques',
+            activePath: '/portfolio/competences-techniques',
+            to: '/portfolio/competences-techniques/frameworks'
+          },
+          {
+            title: 'Soft skills',
+            activePath: '/portfolio/soft-skills',
+            to: '/portfolio/soft-skills'
+          }
+        ]" class="shrink-0" />
 
-      <section class="border border-neutral-500">
-        <NuxtPage />
-      </section>
+        <NuxtPage class="grow overflow-hidden" />
+      </div>
     </template>
   </PageLayout>
 </template>

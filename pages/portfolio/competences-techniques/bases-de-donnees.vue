@@ -1,12 +1,12 @@
+<template>
+  <div>
+    bdd
+  </div>
+</template>
+
 <script lang="ts" setup>
 
 </script>
-
-<template>
-  <div>
-    Projets
-  </div>
-</template>
 
 <style>
 
