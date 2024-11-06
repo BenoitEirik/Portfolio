@@ -19,42 +19,42 @@ body {
 }
 
 /* Style Simplebar */
-.simplebar-vertical.simplebar-track {
+.simplebar-vertical {
   background: linear-gradient(to left, transparent 45%, rgb(163 163 163) 45% 55%, transparent 55% 100%);
 
   .simplebar-scrollbar::before {
     @apply bg-white rounded-none !opacity-100 !transition-[left,right];
-    inset-inline: 3px;
+    inset-inline: 4px;
   }
 
-  &:hover {
-
-    .simplebar-scrollbar.simplebar-visible:before,
-    .simplebar-scrollbar.simplebar-visible:active,
-    .simplebar-scrollbar.simplebar-visible:focus {
-      @apply bg-amber-600 !important;
-      inset-inline: 0px !important;
-    }
+  .simplebar-scrollbar.simplebar-hover::before {
+    @apply bg-amber-600;
+    inset-inline: 0px;
   }
 }
 
-.simplebar-horizontal.simplebar-track {
+.simplebar-dragging .simplebar-vertical .simplebar-scrollbar::before {
+  @apply bg-amber-600;
+  inset-inline: 0px;
+}
+
+.simplebar-horizontal {
   background: linear-gradient(to bottom, transparent 45%, rgb(163 163 163) 40% 55%, transparent 55% 100%);
 
   .simplebar-scrollbar::before {
-    @apply bg-white !rounded-none !opacity-100 !transition-[top,bottom];
-    inset-block: 3px;
+    @apply bg-white rounded-none !opacity-100 !transition-[top,bottom];
+    inset-block: 4px;
   }
 
-  &:hover {
-
-    .simplebar-scrollbar.simplebar-visible:before,
-    .simplebar-scrollbar.simplebar-visible:active,
-    .simplebar-scrollbar.simplebar-visible:focus {
-      @apply bg-amber-600 !opacity-100 !rounded-none !important;
-      inset-block: 0px !important;
-    }
+  .simplebar-scrollbar.simplebar-hover:before {
+    @apply bg-amber-600;
+    inset-block: 0px;
   }
+}
+
+.simplebar-dragging .simplebar-horizontal .simplebar-scrollbar::before {
+  @apply bg-amber-600;
+  inset-block: 0px;
 }
 
 /* Style page transitions */
