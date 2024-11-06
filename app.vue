@@ -1,8 +1,8 @@
 <template>
   <div
-    class="flex min-h-screen w-screen max-w-full items-center justify-between bg-gray-900 px-20 py-4 font-[Borda] text-lg font-bold text-white [background:_url(/images/wallpapers/pexels-digitech-1438761.webp)_center/cover]">
-    <div class="h-10 w-10" />
-    <div class="h-[1040px] max-h-[1040px] w-[1880px] max-w-[1880px] border border-neutral-500 bg-slate-800/20 backdrop-blur-md [transform:rotateY(-3deg)]">
+    class="flex min-h-screen w-screen max-w-full items-center justify-center px-20 py-4 font-[Borda] text-lg font-bold text-white backdrop-blur-sm [perspective:800px]">
+    <div class="h-10 w-96" />
+    <div class="h-[1040px] max-h-[1040px] w-[1850px] max-w-[1850px] border border-neutral-500 [transform:rotateY(-3deg)rotateX(-1deg)]">
       <NuxtPage class="h-full max-h-full w-full max-w-full" />
     </div>
   </div>
@@ -10,7 +10,8 @@
 
 <style lang="scss">
 body {
-  cursor: url('/public/cursors/The_Division_1/TD_arrow.cur'), default;
+  cursor: url('/cursors/The_Division_1/TD_arrow.cur'), default;
+  background: url('/images/wallpapers/TD1.jpg') center/cover no-repeat fixed;
 }
 
 .square-pixels-on-extremities {
