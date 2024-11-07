@@ -1,3 +1,87 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Borda";
+  src: url("~/public/fonts/borda-webfont/Borda.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Borda";
+  src: url("~/public/fonts/borda-webfont/Borda Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Borda";
+  src: url("~/public/fonts/borda-webfont/Borda Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Borda";
+  src: url("~/public/fonts/borda-webfont/Borda Light Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Borda";
+  src: url("~/public/fonts/borda-webfont/Borda Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Borda";
+  src: url("~/public/fonts/borda-webfont/Borda Medium Italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Borda";
+  src: url("~/public/fonts/borda-webfont/Borda DemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Borda";
+  src: url("~/public/fonts/borda-webfont/Borda DemiBold Italic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Borda";
+  src: url("~/public/fonts/borda-webfont/Borda Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Borda";
+  src: url("~/public/fonts/borda-webfont/Borda Bold Italic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Borda";
+  src: url("~/public/fonts/borda-webfont/Borda ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Borda";
+  src: url("~/public/fonts/borda-webfont/Borda ExtraBold Italic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}

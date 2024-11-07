@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex min-h-screen w-screen max-w-full items-center justify-center px-20 py-4 font-[Borda] text-lg font-bold text-white backdrop-blur-sm [perspective:800px]">
+    class="flex min-h-screen w-screen max-w-full items-center justify-center px-20 py-4 font-['Borda'] text-lg font-bold text-white backdrop-blur-sm [perspective:800px]">
     <div class="h-10 w-96" />
     <div class="h-[1040px] max-h-[1040px] w-[1850px] max-w-[1850px] border border-neutral-500 [transform:rotateY(-3deg)rotateX(-1deg)]">
       <NuxtPage class="h-full max-h-full w-full max-w-full" />
