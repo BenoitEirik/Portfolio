@@ -33,12 +33,21 @@ importers:
       '@iconify-json/cbi':
         specifier: ^1.2.5
         version: 1.2.5
+      '@iconify-json/cib':
+        specifier: ^1.2.1
+        version: 1.2.1
+      '@iconify-json/devicon-plain':
+        specifier: ^1.2.4
+        version: 1.2.4
       '@iconify-json/fluent-mdl2':
         specifier: ^1.2.0
         version: 1.2.0
       '@iconify-json/ion':
         specifier: ^1.2.1
         version: 1.2.1
+      '@iconify-json/simple-icons':
+        specifier: ^1.2.11
+        version: 1.2.11
       '@nuxt/content':
         specifier: ^2.13.4
         version: 2.13.4(ioredis@5.4.1)(magicast@0.3.5)(nuxt@3.14.0(@parcel/watcher@2.5.0)(@types/node@22.8.7)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.24.4)(sass@1.80.6)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.10(@types/node@22.8.7)(sass@1.80.6)(terser@5.36.0)))(rollup@4.24.4)(vue@3.5.12(typescript@5.6.3))
@@ -518,11 +527,20 @@ packages:
   '@iconify-json/cbi@1.2.5':
     resolution: {integrity: sha512-MIXtU4/ttQgPD+OhI5a4lSCjkvvnWQblKgKZ4OAHAGT+BrkG4V6debiV0/yrgUHbCRaJUIzQIADOEdvS4yBCSA==}
 
+  '@iconify-json/cib@1.2.1':
+    resolution: {integrity: sha512-3GaouBPiNevaodcZ3eJi0kxzZYFQxTkR847SNbW+ezGJSQsdO6hsvZQl0HKfla56zFXLaL4Ne/zybT3EtMjwrA==}
+
+  '@iconify-json/devicon-plain@1.2.4':
+    resolution: {integrity: sha512-zJEj6CFhRytWWEFU58cb4qccVXpGDKxhlyaIRspJuRh2nlu2oz75lZgw6C9u8yGOT0X8DTO/RbXN1rnYmonogg==}
+
   '@iconify-json/fluent-mdl2@1.2.0':
     resolution: {integrity: sha512-V/8AmNxszliUbFv6sNEVJM1JHshB3k7m/yjysG8fi9hTMkIW4v8XncJJZJTPNCiZRY12Lm/yKUENa8v1X/goTA==}
 
   '@iconify-json/ion@1.2.1':
     resolution: {integrity: sha512-33jiBdtP8+uBV0KRz8Z9g54QFujzssiT9W6wdNuY61VQM1s3cvoAX89yiczRs4/6b2xJE5vqqvsEJAQPqfY5JA==}
+
+  '@iconify-json/simple-icons@1.2.11':
+    resolution: {integrity: sha512-AHCGDtBRqP+JzAbBzgO8uN/08CXxEmuaC6lQQZ3b5burKhRU12AJnJczwbUw2K5Mb/U85EpSUNhYMG3F28b8NA==}
 
   '@iconify/collections@1.0.478':
     resolution: {integrity: sha512-qcjdK6fMB77zHqDwZ13l9Uww6MzYE2j/dGl39cmx7ot8DJDmvYLop+dU1Gleg7o6txl4060Yq3SAd57jxbjs3w==}
@@ -4418,11 +4436,23 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
+  '@iconify-json/cib@1.2.1':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/devicon-plain@1.2.4':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/fluent-mdl2@1.2.0':
     dependencies:
       '@iconify/types': 2.0.0
 
   '@iconify-json/ion@1.2.1':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/simple-icons@1.2.11':
     dependencies:
       '@iconify/types': 2.0.0
 
