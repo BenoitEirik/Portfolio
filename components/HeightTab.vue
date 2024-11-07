@@ -14,15 +14,15 @@ const props = defineProps<{
   <nav class="overflow-hidden">
     <ul class="flex items-stretch gap-4 pb-5">
       <li v-for="(item, i) in items" :key="i"
-        class="flex flex-col items-stretch gap-1 [&>span]:hover:bg-amber-600 active:[transform:scale(0.9)] transition [&_button]:active:bg-amber-600/50">
-        <span class="block h-2 bg-transparent transition"
-          :class="{ '!bg-amber-600': $route.path.startsWith(item.activePath) }" />
+        class="flex flex-col items-stretch gap-1 [&>span]:hover:bg-focus active:[transform:scale(0.9)] transition [&_button]:active:bg-focus/focus-opacity">
+        <span class="block h-2 transition bg-transparent"
+          :class="{ '!bg-focus': $route.path.startsWith(item.activePath) }" />
         <button type="button" @click="navigateTo(item.to)"
-          class="square-pixels-on-extremities flex h-64 w-56 flex-col items-stretch bg-neutral-600/50 outline-none backdrop-blur-md">
-          <div class="flex basis-2/3 items-center justify-center">
+          class="flex flex-col items-stretch w-56 h-64 outline-none square-pixels-on-extremities bg-primary/primary-opacity backdrop-blur-md">
+          <div class="flex items-center justify-center basis-2/3">
             <slot :name="`tab-${i}`" />
           </div>
-          <span class="flex shrink-0 basis-1/3 items-center justify-center">
+          <span class="flex items-center justify-center shrink-0 basis-1/3">
             <span class="text-xl">{{ item.title }}</span>
           </span>
         </button>

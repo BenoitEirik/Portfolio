@@ -17,13 +17,13 @@ const model = defineModel()
 </script>
 
 <template>
-  <div class="flex bg-neutral-600/50 backdrop-blur-md transition active:scale-95 active:bg-amber-600/50"
+  <div class="flex transition bg-primary/primary-opacity backdrop-blur-md active:scale-95 active:bg-focus/focus-opacity"
     @keyup.enter="update">
     <input :type="props.type" @input="e => input = e" v-model="model"
-      class="h-12 grow border-b-4 border-neutral-300/20 bg-transparent px-3 outline-none transition focus:border-b-amber-600 [&+button]:focus:border-b-amber-600"
+      class="h-12 grow border-b-4 border-secondary/secondary-opacity bg-transparent px-3 outline-none transition focus:border-b-focus [&+button]:focus:border-b-focus"
       :placeholder="props.placeholder">
     <button @click="update" :class="{ 'hidden': iconName === undefined }"
-      class="outline-none active:border-b-amber-600 relative flex shrink-0 items-center justify-items-center border-b-4 border-neutral-300/20 px-3 [&>span]:hover:scale-110 transition before:absolute before:left-0 before:h-[calc(100%-15px)] before:w-[1px] before:bg-neutral-300/20">
+      class="outline-none active:border-b-focus relative flex shrink-0 items-center justify-items-center border-b-4 border-secondary/secondary-opacity px-3 [&>span]:hover:scale-110 transition before:absolute before:left-0 before:h-[calc(100%-15px)] before:w-[1px] before:bg-secondary/secondary-opacity">
       <Icon v-if="props.iconName" :name="props.iconName" style="color: white" size="24px" />
     </button>
   </div>

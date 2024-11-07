@@ -5,23 +5,23 @@
 <template>
   <section class="flex flex-col items-stretch gap-4 overflow-hidden">
     <h2 class="text-3xl">Articles</h2>
-    <hr class="h-[1px] border-none bg-neutral-400">
+    <hr class="h-[2px] border-none bg-secondary/secondary-opacity">
     <ContentList path="blog" v-slot="{ list }">
-      <div class="grow overflow-hidden">
+      <div class="overflow-hidden grow">
         <simplebar data-simplebar-auto-hide="false" class="h-full pr-4">
           <template v-for="article in list" :key="article._path">
             <NuxtLink :to="article._path"
-              class="bg-hover-animation flex flex-col gap-1 outline-none transition active:scale-95 [&_#tb]:hover:bg-amber-600 [&_#tb]:focus:bg-amber-600">
-              <span id="tb" class="block h-2 bg-transparent transition" />
-              <article class="square-pixels-on-extremities flex gap-4 bg-neutral-600/50 backdrop-blur-md">
+              class="bg-hover-animation flex flex-col gap-1 outline-none transition active:scale-95 [&_#tb]:hover:bg-focus [&_#tb]:focus:bg-focus">
+              <span id="tb" class="block h-2 transition bg-transparent" />
+              <article class="flex gap-4 square-pixels-on-extremities bg-primary/primary-opacity backdrop-blur-md">
                 <img src="/images/wallpapers/pexels-digitech-1438761.webp" class="cover aspect-video h-52 shrink-0">
-                <div class="flex grow flex-col gap-2 py-2">
-                  <h3 class="line-clamp-2 text-2xl transition">{{ article.title }}</h3>
+                <div class="flex flex-col gap-2 py-2 grow">
+                  <h3 class="text-2xl transition line-clamp-2">{{ article.title }}</h3>
                   <p class="line-clamp-3">
                     {{ article.description }}
                   </p>
-                  <span class="font-normal text-neutral-300">
-                    Publié le 15 septembre 2015
+                  <span class="flex items-center font-normal text-neutral-300 grow">
+                    <span>Publié le 15 septembre 2015</span>
                   </span>
                 </div>
               </article>
@@ -44,7 +44,7 @@
 
 @keyframes flash {
   0% {
-    @apply bg-amber-600;
+    @apply bg-focus;
   }
 
   100% {

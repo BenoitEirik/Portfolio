@@ -1,9 +1,9 @@
 <template>
   <div
-    class="flex min-h-screen w-screen max-w-full items-center justify-center px-20 py-4 font-['Borda'] text-lg font-bold text-white backdrop-blur-sm [perspective:800px]">
+    class="flex min-h-screen w-screen max-w-full items-center justify-center px-20 py-4 font-['Borda'] text-lg font-bold text-white [perspective:800px] before:absolute before:w-full before:h-full before:backdrop-blur-sm">
     <div class="h-10 w-96" />
-    <div class="h-[1040px] max-h-[1040px] w-[1850px] max-w-[1850px] border border-neutral-500 [transform:rotateY(-3deg)rotateX(-1deg)]">
-      <NuxtPage class="h-full max-h-full w-full max-w-full" />
+    <div class="h-[1040px] max-h-[1040px] w-[1850px] max-w-[1850px] [transform:rotateY(-3deg)rotateX(-1deg)]">
+      <NuxtPage class="w-full h-full max-w-full max-h-full" />
     </div>
   </div>
 </template>
@@ -15,7 +15,7 @@ body {
 }
 
 .square-pixels-on-extremities {
-  @apply relative before:top-0 before:absolute before:left-0 before:h-full before:w-[2px] before:border-y-2 before:border-white before:bg-transparent after:top-0 after:absolute after:right-0 after:h-full after:w-[2px] after:border-y-2 after:border-white after:bg-transparent;
+  @apply relative before:top-0 before:absolute before:left-0 before:h-full before:w-[2px] before:border-y-2 before:border-secondary before:bg-transparent after:top-0 after:absolute after:right-0 after:h-full after:w-[2px] after:border-y-2 after:border-secondary after:bg-transparent;
 }
 
 /* Style Simplebar */
@@ -28,13 +28,13 @@ body {
   }
 
   .simplebar-scrollbar.simplebar-hover::before {
-    @apply bg-amber-600;
+    @apply bg-focus;
     inset-inline: 0px;
   }
 }
 
 .simplebar-dragging .simplebar-vertical .simplebar-scrollbar::before {
-  @apply bg-amber-600;
+  @apply bg-focus;
   inset-inline: 0px;
 }
 
@@ -47,13 +47,13 @@ body {
   }
 
   .simplebar-scrollbar.simplebar-hover:before {
-    @apply bg-amber-600;
+    @apply bg-focus;
     inset-block: 0px;
   }
 }
 
 .simplebar-dragging .simplebar-horizontal .simplebar-scrollbar::before {
-  @apply bg-amber-600;
+  @apply bg-focus;
   inset-block: 0px;
 }
 
