@@ -1,9 +1,9 @@
 <template>
   <div
-    class="flex min-h-screen w-screen max-w-full items-center justify-center px-20 py-4 font-['Borda'] text-lg font-bold text-white [perspective:800px] before:absolute before:w-full before:h-full before:backdrop-blur-sm">
+    class="flex min-h-screen w-screen max-w-full items-center justify-center px-20 py-4 font-['Borda'] text-lg font-semibold text-white [perspective:800px] before:absolute before:h-full before:w-full before:backdrop-blur-sm">
     <div class="h-10 w-96" />
     <div class="h-[1040px] max-h-[1040px] w-[1850px] max-w-[1850px] [transform:rotateY(-3deg)rotateX(-1deg)]">
-      <NuxtPage class="w-full h-full max-w-full max-h-full" />
+      <NuxtPage class="h-full max-h-full w-full max-w-full" />
     </div>
   </div>
 </template>
@@ -23,8 +23,10 @@ body {
   background: linear-gradient(to left, transparent 45%, rgb(163 163 163) 45% 55%, transparent 55% 100%);
 
   .simplebar-scrollbar::before {
-    @apply bg-white rounded-none !opacity-100 !transition-[left,right];
+    @apply bg-white rounded-none !opacity-100;
     inset-inline: 4px;
+    // !transition-[left,right] : formatting is broken
+    transition: top 150ms cubic-bezier(0.4, 0, 0.2, 1), bottom 150ms cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
 
   .simplebar-scrollbar.simplebar-hover::before {
@@ -42,8 +44,10 @@ body {
   background: linear-gradient(to bottom, transparent 45%, rgb(163 163 163) 40% 55%, transparent 55% 100%);
 
   .simplebar-scrollbar::before {
-    @apply bg-white rounded-none !opacity-100 !transition-[top,bottom];
+    @apply bg-white rounded-none !opacity-100;
     inset-block: 4px;
+    // !transition-[left,right] : formatting is broken
+    transition: top 150ms cubic-bezier(0.4, 0, 0.2, 1), bottom 150ms cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
 
   .simplebar-scrollbar.simplebar-hover:before {
@@ -71,7 +75,13 @@ body {
 }
 
 /* Style cursor */
-button, a, input, textarea, select, summary, [role="button"] {
+button,
+a,
+input,
+textarea,
+select,
+summary,
+[role="button"] {
   cursor: url('/cursors/The_Division_1/TD_link.cur'), pointer;
 }
 </style>

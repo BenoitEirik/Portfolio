@@ -20,7 +20,7 @@
           {
             title: 'Compétences techniques',
             activePath: '/portfolio/competences-techniques',
-            to: '/portfolio/competences-techniques/frameworks'
+            to: '/portfolio/competences-techniques/languages'
           },
           {
             title: 'Soft skills',
