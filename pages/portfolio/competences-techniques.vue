@@ -24,6 +24,11 @@
         title: 'DevOps',
         activePath: '/portfolio/competences-techniques/devops',
         to: '/portfolio/competences-techniques/devops'
+      },
+      {
+        title: 'Méthodologies et bonnes pratiques',
+        activePath: '/portfolio/competences-techniques/methodologies-et-bonnes-pratiques',
+        to: '/portfolio/competences-techniques/methodologies-et-bonnes-pratiques'
       }
     ]" class="shrink-0">
       <template #tab-0>
@@ -56,6 +61,14 @@
           <Icon name="simple-icons:jenkins" size="48px" />
           <Icon name="simple-icons:docker" size="48px" />
           <Icon name="simple-icons:prometheus" size="48px" />
+        </div>
+      </template>
+      <template #tab-4>
+        <div class="grid grid-cols-2 grid-rows-2 gap-4">
+          <Icon name="bi:kanban" size="48px" />
+          <Icon name="iconoir:agile" size="48px" />
+          <span class="flex size-[48px] items-center justify-center text-[20px] font-extrabold">MVC<br>POO</span>
+          <span class="flex size-[48px] items-center justify-center text-[20px] font-extrabold">KISS<br>DRY</span>
         </div>
       </template>
     </HeightTab>

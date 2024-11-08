@@ -19,7 +19,7 @@ const props = defineProps<{
           :class="{ '!bg-focus': $route.path.startsWith(item.activePath) }" />
         <button @click="navigateTo(item.to)" type="button"
           class="min-w-64 bg-secondary/secondary-opacity px-8 py-1 [&>p]:hover:[transform:translateZ(4rem)] [perspective:800px] line-clamp-1 backdrop-blur-primary">
-          <p class="text-2xl transition">{{ item.title }}</p>
+          <p class="line-clamp-1 text-2xl transition">{{ item.title }}</p>
         </button>
       </li>
     </ul>

@@ -30,6 +30,9 @@ importers:
         specifier: latest
         version: 4.4.5(vue@3.5.12(typescript@5.6.3))
     devDependencies:
+      '@iconify-json/bi':
+        specifier: ^1.2.1
+        version: 1.2.1
       '@iconify-json/cbi':
         specifier: ^1.2.5
         version: 1.2.5
@@ -42,6 +45,9 @@ importers:
       '@iconify-json/fluent-mdl2':
         specifier: ^1.2.0
         version: 1.2.0
+      '@iconify-json/iconoir':
+        specifier: ^1.2.3
+        version: 1.2.3
       '@iconify-json/ion':
         specifier: ^1.2.1
         version: 1.2.1
@@ -524,6 +530,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@iconify-json/bi@1.2.1':
+    resolution: {integrity: sha512-wsIWb6bcnBkfN8/2puIIE2ul6NYVjclbE/nI7JZsPnfzBamd3NuRFstXQH9Ckkbrw9eiBTNKwHbH90w3UE5QIg==}
+
   '@iconify-json/cbi@1.2.5':
     resolution: {integrity: sha512-MIXtU4/ttQgPD+OhI5a4lSCjkvvnWQblKgKZ4OAHAGT+BrkG4V6debiV0/yrgUHbCRaJUIzQIADOEdvS4yBCSA==}
 
@@ -535,6 +544,9 @@ packages:
 
   '@iconify-json/fluent-mdl2@1.2.0':
     resolution: {integrity: sha512-V/8AmNxszliUbFv6sNEVJM1JHshB3k7m/yjysG8fi9hTMkIW4v8XncJJZJTPNCiZRY12Lm/yKUENa8v1X/goTA==}
+
+  '@iconify-json/iconoir@1.2.3':
+    resolution: {integrity: sha512-CIPFznjl417Y5zBPqZP4+lhHwdTr7aDenzUOL/z92ufuMoX7SOZbZ8dK9/wNaLwCr+2w+MrxfVKc7zjUj9K0Dg==}
 
   '@iconify-json/ion@1.2.1':
     resolution: {integrity: sha512-33jiBdtP8+uBV0KRz8Z9g54QFujzssiT9W6wdNuY61VQM1s3cvoAX89yiczRs4/6b2xJE5vqqvsEJAQPqfY5JA==}
@@ -4432,6 +4444,10 @@ snapshots:
   '@esbuild/win32-x64@0.24.0':
     optional: true
 
+  '@iconify-json/bi@1.2.1':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/cbi@1.2.5':
     dependencies:
       '@iconify/types': 2.0.0
@@ -4445,6 +4461,10 @@ snapshots:
       '@iconify/types': 2.0.0
 
   '@iconify-json/fluent-mdl2@1.2.0':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/iconoir@1.2.3':
     dependencies:
       '@iconify/types': 2.0.0
 
