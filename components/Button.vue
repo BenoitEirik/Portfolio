@@ -14,9 +14,9 @@ function submit() {
 
 <template>
   <button type="button" @click="submit"
-    class="square-pixels-on-extremities bg-animation flex min-w-0 items-center gap-2 bg-primary/primary-opacity px-3 py-2 outline-none backdrop-blur-md hover:bg-secondary/secondary-opacity focus:bg-secondary/secondary-opacity [&_span]:hover:scale-105 [&_span]:focus:scale-105">
+    class="square-pixels-on-extremities bg-animation flex min-w-0 items-center gap-2 bg-primary/primary-opacity px-2 py-1 outline-none backdrop-blur-md hover:bg-secondary/secondary-opacity focus:bg-secondary/secondary-opacity [&_span]:hover:scale-105 [&_span]:focus:scale-105">
     <Icon v-if="props.iconName" :name="props.iconName" size="32px" class="transition text-focus" />
-    <span class="pt-1 text-3xl transition line-clamp-2 grow" :class="{ 'hidden': !props.text }">{{ props.text }}</span>
+    <span class="px-2 pt-1 text-3xl transition line-clamp-2 grow" :class="{ 'hidden': !props.text }">{{ props.text }}</span>
   </button>
 </template>
 

@@ -107,7 +107,13 @@
         </section>
       </div>
     </div>
-    <footer class="flex gap-4 shrink-0">
+    <footer class="flex justify-between gap-4 shrink-0">
+      <div class="flex gap-4">
+        <Button iconName="ion:logo-github" text="GitHub" @click="openURL('https://github.com/BenoitEirik')" />
+        <Button iconName="ion:logo-linkedin" text="LinkedIn"
+          @click="openURL('https://www.linkedin.com/in/olaf-marie-sergent-77a2a3175/')" />
+        <Button iconName="ion:logo-x" text="Twitter" @click="openURL('https://x.com/olafsergent')" />
+      </div>
       <span>© {{ new Date().getFullYear() }} Portfolio - Olaf-Marie Sergent</span>
     </footer>
   </div>
