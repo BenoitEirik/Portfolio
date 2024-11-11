@@ -2,8 +2,9 @@
   <div
     class="flex min-h-screen w-screen max-w-full items-center justify-center px-20 py-4 font-['Borda'] text-lg font-semibold text-white [perspective:800px] before:absolute before:h-full before:w-full before:backdrop-blur-sm">
     <div class="h-10 w-96" />
-    <div class="h-[1040px] max-h-[1040px] w-[1850px] max-w-[1850px] [transform:rotateY(-3deg)rotateX(-1deg)]">
-      <NuxtPage class="h-full max-h-full w-full max-w-full" />
+    <div id="root-page"
+      class="h-[1040px] max-h-[1040px] w-[1850px] max-w-[1850px] [transform:rotateY(-3deg)rotateX(-1deg)]">
+      <NuxtPage class="w-full h-full max-w-full max-h-full" />
     </div>
   </div>
 </template>
@@ -83,5 +84,24 @@ select,
 summary,
 [role="button"] {
   cursor: url('/cursors/The_Division_1/TD_link.cur'), pointer;
+}
+</style>
+
+<style lang="scss" scoped>
+/* Animate on website entering */
+#root-page {
+  animation: websiteEntering 1s ease forwards;
+}
+
+@keyframes websiteEntering {
+  from {
+    transform: scale(0) translateX(50%) translateY(-75%);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1) translateX(0%) translateY(0%) rotateY(-3deg) rotateX(-1deg);
+    opacity: 1;
+  }
 }
 </style>
