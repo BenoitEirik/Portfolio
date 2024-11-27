@@ -3,13 +3,13 @@
 </script>
 
 <template>
-  <div class="flex flex-col gap-8 p-8 justify-stretch">
-    <header class="flex items-center justify-start gap-4 shrink-0">
+  <div class="flex flex-col justify-stretch gap-8 p-8">
+    <header class="flex shrink-0 items-center justify-start gap-4">
       <Icon name="cbi:target" size="42px" class="!text-focus" />
       <h1 class="pt-2 text-5xl">Olaf-Marie SERGENT</h1>
     </header>
-    <div class="grid max-h-full grid-cols-5 gap-12 overflow-hidden grow">
-      <section class="max-h-full col-span-2 overflow-hidden">
+    <div class="grid max-h-full grow grid-cols-5 gap-12 overflow-hidden">
+      <section class="col-span-2 max-h-full overflow-hidden">
         <div class="flex flex-col items-stretch gap-4">
           <h2 class="text-3xl">
             Freelance développeur web - Formateur
@@ -18,9 +18,9 @@
           </h2>
           <hr class="h-[2px] border-none bg-secondary/secondary-opacity">
           <div>
-            <div class="mx-auto square-pixels-on-extremities w-44">
+            <div class="square-pixels-on-extremities mx-auto w-44">
               <img src="/images/1703805470102.jpg" alt="Avatar"
-                class="object-cover border-y-2 border-y-secondary/secondary-opacity">
+                class="border-y-2 border-y-secondary/secondary-opacity object-cover">
             </div>
           </div>
           <p class="text-justify">
@@ -56,10 +56,10 @@
           </p>
         </div>
       </section>
-      <div class="flex flex-col col-span-3 gap-8">
-        <section class="flex flex-col items-stretch gap-4 grow">
+      <div class="col-span-3 flex flex-col gap-8">
+        <section class="flex grow flex-col items-stretch gap-4">
           <h2 class="text-3xl font-bold">Navigation</h2>
-          <nav class="grid grid-cols-2 grid-rows-2 gap-x-10 gap-y-8 grow">
+          <nav class="grid grow grid-cols-2 grid-rows-2 gap-x-10 gap-y-8">
             <MenuItem title="Portfolio" to="/portfolio/experience-pro">
             <template #picture>
               <Icon name="fluent-mdl2:work" size="80px" />
@@ -82,23 +82,20 @@
             </MenuItem>
           </nav>
         </section>
-        <section class="flex flex-col gap-4 overflow-hidden shrink-0">
+        <section class="flex shrink-0 flex-col gap-4 overflow-hidden">
           <h2 class="text-3xl font-bold">Avis clients</h2>
           <simplebar data-simplebar-auto-hide="false" class="w-full max-w-full pb-6">
             <div class="flex gap-4">
-              <article v-for="i in 10"
-                class="flex flex-col square-pixels-on-extremities min-w-96 border-y-2 border-y-secondary/secondary-opacity bg-primary/primary-opacity">
+              <article
+                class="square-pixels-on-extremities flex flex-col border-y-2 border-y-secondary/secondary-opacity bg-primary/primary-opacity">
                 <span class="flex items-end justify-between gap-4 px-4 py-3">
-                  <h3 class="text-2xl font-bold shrink-0">Blandine</h3>
+                  <h3 class="shrink-0 text-2xl font-bold">Blandine F.</h3>
                   <p class="shrink-0 text-secondary">Association FDHN</p>
                 </span>
                 <hr class="h-[1px] border-none bg-secondary/secondary-opacity">
                 <div class="px-4 py-3">
-                  <p class="overflow-hidden line-clamp-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-                    quae.
+                  <p class="line-clamp-3 overflow-hidden">
+                    Développeur très compétent et sachant se mettre au niveau de ses clients (conseils et explications claires). Très réactif également pour résoudre les souci qui auraient pu se présenter. Très bon accompagnement pendant la création de notre site et pour la prise en main ensuite.
                   </p>
                 </div>
               </article>
@@ -107,7 +104,7 @@
         </section>
       </div>
     </div>
-    <footer class="flex justify-between gap-4 shrink-0">
+    <footer class="flex shrink-0 justify-between gap-4">
       <div class="flex gap-4">
         <Button iconName="ion:logo-github" text="GitHub" @click="openURL('https://github.com/BenoitEirik')" />
         <Button iconName="ion:logo-linkedin" text="LinkedIn"

@@ -6,7 +6,10 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
     '@nuxt/fonts',
-    '@nuxt/icon'
+    '@nuxt/icon',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+    'nuxt-seo-utils'
   ],
   vite: {
     css: {
@@ -18,7 +21,10 @@ export default defineNuxtConfig({
     },
   },
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      title: 'Portfolio',
+    }
   },
   css: ['~/assets/scss/main.scss'],
   content: {
@@ -27,5 +33,33 @@ export default defineNuxtConfig({
         indexed: true
       }
     }
-  }
+  },
+  robots: {
+    groups: [
+      {
+        userAgent: '*',
+        allow: '/',
+        comment: 'Allow all other user agents to access the site'
+      },
+      {
+        // From https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt
+        userAgent: [
+          'AI2Bot', 'Ai2Bot-Dolma', 'Amazonbot', 'anthropic-ai', 'Applebot',
+          'Applebot-Extended', 'Bytespider', 'CCBot', 'ChatGPT-User',
+          'Claude-Web', 'ClaudeBot', 'cohere-ai', 'Diffbot', 'DuckAssistBot',
+          'FacebookBot', 'facebookexternalhit', 'FriendlyCrawler', 'Google-Extended',
+          'GoogleOther', 'GoogleOther-Image', 'GoogleOther-Video', 'GPTBot',
+          'iaskspider/2.0', 'ICCCrawler', 'ImagesiftBot', 'img2dataset',
+          'ISSCyberRiskCrawler', 'Kangaroo Bot', 'Meta-ExternalAgent',
+          'Meta-ExternalFetcher', 'OAI-SearchBot', 'omgili', 'omgilibot',
+          'PerplexityBot', 'PetalBot', 'Scrapy', 'Sidetrade indexer bot',
+          'Timpibot', 'VelenPublicWebCrawler', 'Webzio-Extended', 'YouBot'
+        ],
+        disallow: ['/'],
+        comment: 'Disallow AI bots and web crawlers from accessing the site'
+      }
+    ]
+  },
+  sitemap: {
+  },
 })
