@@ -12,7 +12,24 @@
 <style lang="scss">
 body {
   cursor: url('/cursors/The_Division_1/TD_arrow.cur'), default;
-  background: url('/images/wallpapers/TD1.jpg') center/cover no-repeat fixed;
+  background: url('/images/wallpapers/TD1-small.jpg') center/cover no-repeat fixed;
+  transition: background-image 0.5s ease-in-out;
+
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/images/wallpapers/TD1.jpg') center/cover no-repeat fixed;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &.loaded::before {
+    opacity: 1;
+  }
 }
 
 .square-pixels-on-extremities {

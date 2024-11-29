@@ -24,6 +24,13 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       title: 'Portfolio',
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: '/images/wallpapers/TD1.jpg'
+        }
+      ]
     }
   },
   css: ['~/assets/scss/main.scss'],
