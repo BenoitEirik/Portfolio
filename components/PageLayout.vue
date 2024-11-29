@@ -14,9 +14,9 @@ const props = defineProps<{
       </div>
       <h1 class="pt-2 pr-2 text-5xl">{{ props.title }}</h1>
       <hr class="h-full w-[2px] border-none bg-secondary/secondary-opacity">
-      <button class="flex items-center justify-center p-2" @click="navigateTo('/')">
+      <NuxtLink to="/" class="flex items-center justify-center p-2" aria-label="Retour à l'accueil">
         <Icon name="ion:arrow-return-left" size="28px" />
-      </button>
+      </NuxtLink>
     </header>
 
     <slot name="body" />
