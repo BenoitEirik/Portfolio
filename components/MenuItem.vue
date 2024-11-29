@@ -7,17 +7,17 @@ const props = defineProps<{
 
 <template>
   <div class="flex items-center justify-center">
-    <NuxtLink :to="props.to"
-      class="relative flex h-full w-full flex-col items-stretch gap-1 outline-none transition hover:scale-105 focus:scale-105 active:scale-100 [&_h2]:focus:font-bold [&_h2]:hover:font-bold [&_#cov]:hover:scale-105 [&_#cov]:focus:scale-105 [&_#tb]:hover:bg-focus [&_#tb]:focus:bg-focus [&_header]:hover:bg-focus/50 [&_header]:focus:bg-focus/focus-opacity">
-      <span id="tb" class="block h-2 transition bg-transparent" />
+    <NuxtLink :to="props.to" :aria-label="props.title"
+      class="group relative flex h-full w-full flex-col items-stretch gap-1 outline-none transition hover:scale-105 focus:scale-105 active:scale-100">
+      <span class="h-2 bg-transparent transition group-hover:bg-focus group-focus:bg-focus" />
       <div
-        class="flex flex-col items-stretch justify-center border-b-2 square-pixels-on-extremities grow border-b-secondary/secondary-opacity bg-primary/primary-opacity backdrop-blur-primary">
-        <header class="z-10 flex items-center justify-center p-2 transition shrink-0 bg-secondary/secondary-opacity">
-          <h2 class="text-3xl line-clamp-1">{{ props.title }}</h2>
+        class="square-pixels-on-extremities grow flex flex-col items-stretch border-b-2 border-b-secondary/secondary-opacity bg-primary/primary-opacity backdrop-blur-primary">
+        <header class="flex items-center justify-center bg-secondary/secondary-opacity p-2 transition group-hover:bg-focus/50 group-focus:bg-focus/focus-opacity">
+          <h2 class="line-clamp-1 text-3xl transition group-hover:font-bold group-focus:font-bold">{{ props.title }}</h2>
         </header>
         <div class="grow">
-          <div id="cov" class="flex items-center justify-center object-contain w-full h-full p-4 transition">
-            <slot name="picture" id="rr" />
+          <div class="flex h-full w-full items-center justify-center p-4 transition group-hover:scale-105 group-focus:scale-105">
+            <slot name="picture" />
           </div>
         </div>
       </div>
