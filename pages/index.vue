@@ -99,6 +99,19 @@
                   </p>
                 </div>
               </article>
+              <article
+                class="square-pixels-on-extremities flex flex-col border-y-2 border-y-secondary/secondary-opacity bg-primary/primary-opacity">
+                <span class="flex items-end justify-between gap-4 px-4 py-3">
+                  <h3 class="shrink-0 text-2xl font-bold">Aleth S.</h3>
+                  <p class="shrink-0 text-secondary">Apis Gallery</p>
+                </span>
+                <hr class="h-[1px] border-none bg-secondary/secondary-opacity">
+                <div class="px-4 py-3">
+                  <p class="line-clamp-3 overflow-hidden">
+                    Super expérience client! Olaf a été professionnel du début à la fin du projet. A l'écoute et force de proposition, il a su comprendre mon besoin et mes envies, tout en me guidant lors des choix techniques. Réactif, il a su ajuster rapidement les points qui ne convenaient pas lors de l'expérience utilisateur. Je recommande fortement.
+                  </p>
+                </div>
+              </article>
             </div>
           </simplebar>
         </section>
