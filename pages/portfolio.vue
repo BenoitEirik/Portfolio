@@ -18,14 +18,9 @@
             to: '/portfolio/experience-perso'
           },
           {
-            title: 'Compétences techniques',
-            activePath: '/portfolio/competences-techniques',
-            to: '/portfolio/competences-techniques/languages'
-          },
-          {
-            title: 'Soft skills',
-            activePath: '/portfolio/soft-skills',
-            to: '/portfolio/soft-skills'
+            title: 'Compétences',
+            activePath: '/portfolio/competences',
+            to: '/portfolio/competences/languages'
           }
         ]" class="shrink-0" />
 
