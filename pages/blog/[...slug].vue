@@ -1,10 +1,24 @@
 <script lang="ts" setup>
+const content = await queryContent(useRoute().path).findOne()
 
+useSeoMeta({
+  ogImage: content.ogImage.url,
+  twitterTitle: content.title,
+  twitterDescription: content.description,
+  twitterImage: content.twitterImage.url,
+  twitterCard: 'summary_large_image'
+})
+
+useHead({
+  htmlAttrs: {
+    lang: 'fr'
+  }
+})
 </script>
 
 <template>
   <main class="flex flex-col items-stretch gap-4">
-    <ContentDoc v-slot="{ doc }">
+    <ContentDoc head v-slot="{ doc }">
       <div class="flex gap-2">
         <button class="flex items-center justify-center px-2" @click="navigateTo('/blog/list-articles')">
           <Icon name="ion:arrow-return-left" size="28px" />

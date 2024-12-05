@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
-    'nuxt-seo-utils'
+    'nuxt-seo-utils',
+    'nuxt-og-image'
   ],
   vite: {
     css: {
@@ -24,6 +25,9 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       titleTemplate: '%s - olafsergent.fr',
+      htmlAttrs: {
+        lang: 'fr'
+      },
       link: [
         {
           rel: 'preload',
@@ -67,6 +71,10 @@ export default defineNuxtConfig({
       }
     ]
   },
-  sitemap: {
-  },
+  site: {
+    url: 'https://olafsergent.fr',
+    name: 'olafsergent.fr',
+    description: 'Portfolio de Olaf-Marie Sergent',
+    indexable: true
+  }
 })
