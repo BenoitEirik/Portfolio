@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+useHead({
+  title: 'Prendre rendez-vous'
+})
+
 onMounted(() => {
   // Cal embed script
   const script = document.createElement('script')

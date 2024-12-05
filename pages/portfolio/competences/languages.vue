@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-
+useHead({
+  title: 'Langages de programmation'
+})
 </script>
 
 <template>

@@ -1,12 +1,14 @@
+<script lang="ts" setup>
+useHead({
+  title: 'Expériences professionnelles'
+})
+</script>
+
 <template>
   <div>
     Xp pro
   </div>
 </template>
-
-<script lang="ts" setup>
-
-</script>
 
 <style>
 

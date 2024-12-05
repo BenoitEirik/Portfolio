@@ -1,10 +1,10 @@
 <template>
   <div
     class="flex min-h-screen w-screen max-w-full items-center justify-center px-20 py-4 font-['Borda'] text-lg font-semibold text-white [perspective:800px] before:absolute before:h-full before:w-full before:backdrop-blur-sm">
-    <div class="h-10 w-96" />
+    <div class="w-96 h-10" />
     <div id="root-page"
       class="h-[1040px] max-h-[1040px] w-[1850px] max-w-[1850px] [transform:rotateY(-3deg)rotateX(-1deg)]">
-      <NuxtPage class="w-full h-full max-w-full max-h-full" />
+      <NuxtPage class="w-full max-w-full h-full max-h-full" />
     </div>
   </div>
 </template>

@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-
+useHead({
+  title: 'Méthodologies et bonnes pratiques'
+})
 </script>
 
 <template>

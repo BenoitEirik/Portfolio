@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+useHead({
+  title: 'Blog'
+})
+
 async function search(e: Event) {
   // TODO: fix searchContent not working because of useFetch warning in console
   const results = await searchContent((e.target as HTMLInputElement).value)

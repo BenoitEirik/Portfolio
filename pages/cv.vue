@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+useHead({
+  title: 'CV'
+})
+
 function download(url: string, name?: string) {
   const link = document.createElement('a')
   link.href = url
@@ -11,14 +15,14 @@ function download(url: string, name?: string) {
 <template>
   <PageLayout title="CV" :page-number="3">
     <template #body>
-      <div class="flex h-full max-h-full items-stretch gap-8 overflow-hidden">
-        <aside class="flex basis-1/3 flex-col items-stretch">
+      <div class="flex overflow-hidden gap-8 items-stretch h-full max-h-full">
+        <aside class="flex flex-col items-stretch basis-1/3">
           <Button iconName="ion:md-download" icon-side="right" text="Télécharger mon CV"
             @click="download('/cv/CV_2024-11-04_Olaf-Marie_Sergent.pdf', 'CV_Olaf-Marie_Sergent')" />
         </aside>
         <main class="basis-2/3">
           <ClientOnly>
-            <PdfObject url="/cv/CV_2024-11-04_Olaf-Marie_Sergent.pdf" class="h-full w-full" />
+            <PdfObject url="/cv/CV_2024-11-04_Olaf-Marie_Sergent.pdf" class="w-full h-full" />
           </ClientOnly>
         </main>
       </div>

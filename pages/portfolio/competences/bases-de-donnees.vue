@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-
+useHead({
+  title: 'Bases de données'
+})
 </script>
 
 <template>
